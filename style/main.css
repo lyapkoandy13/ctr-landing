@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+h2 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    line-height: 45px;
+    color: #1196F5;
+    position: relative;
+    top: 10px;
+    margin-bottom: 30px;
+    margin-top: 20%;
+}
+
+h2::before {
+    content: '';
+    background: #1196F5;
+    opacity: 0.2;
+    border-radius: 5px;
+    width: 220px;
+    height: 5px;
+    top: -10px;
+    position: absolute;
+}
+
+p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 158.2%;
+    color: #2F3133;
+}
+
+/* ---------------------------HEADER */
+header {
+    background: linear-gradient(90deg, #0F69D2 0%, #80B9FA 100%);
+    height: 580px;
+    margin-bottom: 180px;
+}
+
+/* ----------Nav */
+.navbar {
+    padding: 40px 0 0 0;
+}
+
+.navbar-brand {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+
+.navbar-brand:hover {
+    color: #FFFFFF;
+}
+
+.nav_lang {
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.lang_item {
+    margin-left: 20px;
+}
+
+.lang_item a {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.lang_item__active a {
+    font-weight: bold;
+}
+
+/* ---------------------------header_body */
+.own-container {
+    padding: 0 50px;
+}
+
+.header_body {
+    margin-top: 80px;
+    position: relative;
+}
+
+.header_body__left h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 41px;
+    line-height: 56px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    max-width: 463px;
+}
+
+.header_body__left h4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 144.68%;
+    color: #FFFFFF;
+    max-width: 494px;
+}
+
+.header_body__right {
+    position: relative;
+}
+
+.header_body__right img {
+    position: absolute;
+    top: -90px;
+}
+
+.downlod_button__mob {
+    display: none;
+}
+
+.downlod_button {
+    display: block;
+    margin-top: 60px;
+    margin-left: 0px;
+}
+
+.downlod_button__link:first-child {
+    margin-right: 30px;
+}
+
+/* ---------------------------MAIN */
+
+.advantages {
+    margin-bottom: 180px;
+}
+
+.advantages h2 {
+    text-align: center;
+    max-width: 425px;
+    margin: 0 auto;
+}
+
+.advantages h2::before {
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.advantages_card {
+    margin-top: 80px;
+}
+
+.advantages_card__body h5 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 158.18%;
+    text-align: center;
+    color: #2F3133;
+    margin-top: 35px;
+}
+
+.advantages_card__body img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* -------------------------without_pay */
+.without_pay {
+    position: relative;
+    margin-bottom: 180px;
+    background: linear-gradient(-90deg, #78B3F7 0%, #FFFFFF 42.71%);
+}
+
+.without_pay__left p {
+    max-width: 477px;
+}
+
+.without_pay__right_mob {
+    display: none;
+}
+
+.without_pay__right {
+    display: block;
+}
+
+/* ----------------------------app_development */
+.app_development {
+    margin-bottom: 180px;
+}
+
+.app_development__left img {
+    width: 90%;
+}
+
+/* ---------------------------------footer */
+footer {
+    position: relative;
+    padding: 34px 0 24px;
+    background: linear-gradient(90deg, #0F69D2 0%, #80B9FA 100%);
+}
+
+footer .navbar {
+    padding: 0px 0 0 0;
+}
+
+footer a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+footer a:hover {
+    color: #FFFFFF;
+}
+
+footer a img {
+    margin-left: 25px;
+}
+
+.developed_by {
+    display: block;
+}
+
+#up {
+    position: fixed;
+    bottom: 0px;
+    right: 70px;
+}
+
+.admin_key {
+    margin-top: 10px;
+    display: block;
+}
+
+@media (max-width: 992px) {
+    h2 {
+        font-size: 24px;
+        line-height: 33px;
+    }
+
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 158.2%;
+        color: #2F3133;
+    }
+
+    header {
+        height: 533px;
+        margin-bottom: 180px;
+    }
+
+    /* ----------Nav */
+    .navbar {
+        padding: 10px 0 0 0;
+    }
+
+
+    /* ---------------------------header_body */
+    .own-container {
+        padding: 0px;
+    }
+
+    .header_body {
+        margin-top: 40px;
+        position: relative;
+    }
+
+    .header_body__left h1 {
+        font-size: 27px;
+        line-height: 37px;
+        text-align: center;
+        max-width: 300px;
+        margin: 0 auto 15px;
+    }
+
+    .header_body__left h4 {
+        text-align: center;
+        font-size: 16px;
+        line-height: 144.68%;
+        max-width: 300px;
+        margin: 0 auto 25px;
+    }
+
+    /* .header_body__right {
+        position: relative;
+        width: 100%;
+    } */
+
+    .header_body__right img {
+        position: relative;
+        display: block;
+        width: 40%;
+        top: 0;
+        margin: 0 auto;
+    }
+
+    .downlod_button {
+        display: none;
+    }
+
+    .downlod_button__mob {
+        margin: 25px auto 0;
+        display: block;
+    }
+
+    /* ---------------------------MAIN */
+
+    .advantages {
+        margin-bottom: 15px;
+    }
+
+    .advantages_card {
+        margin-top: 60px;
+    }
+
+    .advantages_card__body {
+        margin-bottom: 65px;
+    }
+
+    .advantages_card__body h5 {
+        font-size: 21px;
+        margin-top: 35px;
+    }
+
+    .advantages_card__body img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* -------------------------without_pay */
+    .without_pay {
+        position: relative;
+        margin-bottom: 80px;
+        background: #FFFFFF;
+    }
+
+    .without_pay__left p {
+        text-align: center;
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .without_pay__left h2 {
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .without_pay__left h2::before {
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .without_pay__right {
+        display: none;
+    }
+
+    .without_pay__right_mob {
+        display: block;
+        background: linear-gradient(-90deg, #78B3F7 0%, #FFFFFF 69.27%);
+    }
+
+    /* ----------------------------app_development */
+    .app_development {
+        margin-bottom: 80px;
+    }
+
+    .app_development__left {
+        order: 2;
+    }
+
+    .app_development__right h2 {
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .app_development__right h2::before {
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .app_development__right p {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .app_development__left img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        margin-bottom: 265px;
+    }
+
+    .header_body {
+        margin-top: 30px;
+    }
+
+    .header_body__right img {
+        position: relative;
+        display: block;
+        width: 300px;
+        height: 323px;
+        top: 0;
+        margin: 0 auto;
+    }
+
+    .downlod_button__mob {
+        width: 150px;
+        margin: 25px auto 0;
+        display: block;
+    }
+
+    .downlod_button__link img {
+        width: 150px;
+        height: 43px;
+        margin-bottom: 10px;
+    }
+
+    /* ---------------------------------footer */
+    footer {
+        padding: 30px 0;
+    }
+
+    .arr_href {
+        order: 2;
+        display: block;
+        width: 100%;
+        margin: 0 auto 10px;
+    }
+
+    footer a img {
+        margin-left: 0px;
+    }
+
+
+    #up {
+        position: fixed;
+        bottom: 20px;
+        right: 0px;
+    }
+
+}
