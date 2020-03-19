@@ -66,6 +66,7 @@ header {
 }
 
 .navbar-brand {
+    margin-right: 100px;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
@@ -73,10 +74,9 @@ header {
     color: #FFFFFF;
 }
 
-.navbar-brand img {
-    margin-top: -14px;
+.logo img:nth-child(2) {
+    margin-right: 15px;
 }
-
 
 .navbar-brand:hover {
     color: #FFFFFF;
@@ -87,7 +87,7 @@ header {
     margin-bottom: 0px;
 }
 
-.lang_item {
+.lang_item:nth-child(2) {
     margin-left: 20px;
 }
 
@@ -223,7 +223,7 @@ header {
 /* ---------------------------------footer */
 footer {
     position: relative;
-    padding: 34px 0 24px;
+    padding: 50px 0;
     background: linear-gradient(90deg, #0F69D2 0%, #80B9FA 100%);
 }
 
@@ -244,31 +244,15 @@ footer a:hover {
     color: #FFFFFF;
 }
 
-.arr_href img {
+.arr_href {
     margin-left: -45px;
 }
 
-.arr_href {
-    margin-bottom: 40px;
-}
-
-.developed_by {
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 23px;
-}
 
 #up {
     position: fixed;
-    bottom: 15px;
+    bottom: 20px;
     right: 0px;
-}
-
-.admin_key {
-    margin-top: 10px;
-    display: block;
 }
 
 @media (max-width: 992px) {
@@ -432,6 +416,23 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+    .logo img {
+        height: 24px;
+        width: auto;
+    }
+
+    .logo img:nth-child(2) {
+        margin-right: 10px;
+    }
+
+    .navbar-brand {
+        margin-right: 20px;
+    }
+
+    .nav_lang {
+        margin-bottom: -7px;
+    }
+
     header {
         margin-bottom: 265px;
     }
@@ -463,17 +464,33 @@ footer a:hover {
 
     /* ---------------------------------footer */
     footer {
-        padding: 30px 0;
+        padding: 40px 0;
+    }
+
+    footer nav {
+        flex-direction: column;
+    }
+
+    footer nav .nav_lang {
+        order: 1;
+        width: 100%;
+        margin-bottom: 40px;
     }
 
     .arr_href {
         order: 2;
         display: block;
         width: 100%;
-        margin: 0 auto 10px;
+        margin: 0 auto 27px;
     }
 
-    .arr_href img{
+    .developed_by {
+        order: 3;
+        position: relative;
+        bottom: 0;
+    }
+
+    .arr_href img {
         margin: 0;
     }
 
@@ -484,24 +501,13 @@ footer a:hover {
 
     #up {
         position: fixed;
-        bottom: 10px;
+        bottom: 130px;
         right: 0px;
     }
 
-    .developed_by {
-        position: relative;
-        bottom: 0;
-    }
-
     .navbar-brand img {
-        margin-top: -14px;
-        width: 40px;
-        height: 40px;
-    }
-
-    .navbar-brand span {
-        line-height: 16px !important;
-        font-size: 12px !important;
+        width: 32px;
+        height: 24px;
     }
 
 
